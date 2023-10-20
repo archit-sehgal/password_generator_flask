@@ -18,8 +18,6 @@ def genPassword():
         num = int(data["num"])
         lett = int(data["lett"])
         symb = int(data["symb"])
-
-
         x = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
         y = [
             "a",
@@ -59,12 +57,8 @@ def genPassword():
             pasw += random.choice(z)
         random.shuffle(pasw)
         password = "".join(pasw)
-        print(password)
         return jsonify({"password": password})
 
     except Exception as e:
         return jsonify({"error": e})
 
-
-if __name__ == "__main__":
-    app.run(port=8080)
