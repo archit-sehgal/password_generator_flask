@@ -13,7 +13,7 @@ function App() {
   const generatePasw = () => {
     event.preventDefault();
     axios
-      .post("http://127.0.0.1:8080/gen/pasw", { num, lett, symb })
+      .post("https://passwordgenerator-obuo.onrender.com/gen/pasw", { num, lett, symb })
       .then((response) => {
         setPasw(response.data.password);
       })
