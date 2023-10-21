@@ -24,6 +24,10 @@ h1{
     flex-direction: column;
     gap:30px;
     padding: 2px;
+    background: url("https://img.freepik.com/premium-photo/blurred-colorful-wallpaper-background_976742-179.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .inputbox{
     flex-direction: column;
